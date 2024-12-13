@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Manrope", sans-serif;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+    
+   
+  }
+
+ 
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+  
+
+
+
+  .arrow {
+    @apply inline-block ml-1; 
+    
+    display: inline-block;
+    
+    vertical-align: middle; /* Aligns with the text */
+    transition: transform 0.2s ease;
+}
+
+/* li:hover .dropdown {
+  display: block;
+  
+} */
+.drop.active .dropdown {
+  display: block;
+}
+/* .arrow:hover{
+ 
+  transform: rotate(180deg); 
+} */
+.drop:hover .arrow,
+.drop.active .arrow {
+    transform: rotate(180deg);
+}
+/* .dropdown:hover .arrow::after {
+  transform: rotate(180deg);
+} */
+/* .li:hover .arrow::after{
+  transform: rotate(180deg);
+} */
+
+
