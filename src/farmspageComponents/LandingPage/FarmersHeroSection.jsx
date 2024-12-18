@@ -19,6 +19,13 @@ const FarmersHeroSection = () => {
             Join Waitlist
           </button>
           </Link>
+            <Link to="/farmers-profile">
+          <button type="button"
+            className='bg-[#009933] mt-4 px-6 py-2 md:px-9 rounded-lg text-[0.8rem] md:text-[1rem] text-white ml-6'
+          >
+            Create Profile
+          </button>
+          </Link>
         
     
             </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import LindaJohnson from '../assets/images/Linda Gift/LindaJohnson.png';
 import RobertSmith from '../assets/images/Linda Gift/RobertSmith.png';
 import BosunThomas from '../assets/images/Linda Gift/BosunThomas.png';
@@ -15,7 +14,7 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={LindaJohnson} alt="First customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Before Konectar, I used to depend on middlemen who often delayed payments and offered unfair prices. Now, I connect directly with buyers, negotiate better deals, and receive my payments on time. It's given me the confidence to expand my farm!"
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;Before Konectar, I used to depend on middlemen who often delayed payments and offered unfair prices. Now, I connect directly with buyers, negotiate better deals, and receive my payments on time. It&apos;s given me the confidence to expand my farm!&quot;
 </p>
                             <p className='mt-3'>Musa Adebayo,</p>
                             <p className='text-[0.6rem]'>Bell Peppers Farmer, Ogun State.</p>
@@ -26,7 +25,7 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={RobertSmith} alt="Second customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"As a small-scale farmer, it was always hard to find reliable buyers. But with Konectar, I’ve been able to access wholesale buyers who value my fresh produce. The best part? I no longer worry about the quality checks or payment delays – Konectar takes care of that!"
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;As a small-scale farmer, it was always hard to find reliable buyers. But with Konectar, I’ve been able to access wholesale buyers who value my fresh produce. The best part? I no longer worry about the quality checks or payment delays – Konectar takes care of that!"
 </p>
                             <p className='mt-3'>Grace Ogunseyin,</p>
                             <p className='text-[0.6rem]'>Vegetable Farmer, Ekiti State.</p>

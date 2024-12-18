@@ -55,4 +55,14 @@
   transform: rotate(180deg);
 } */
 
+/* .camera {
+  position: relative;
+}
+.camera::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: hsla(0, 0%, 0%, 0.1);
+} */
 
