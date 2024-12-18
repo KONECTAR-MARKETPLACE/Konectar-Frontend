@@ -13,6 +13,11 @@ import KonectarPrivacyPolicy from './pages/konectar-privacy-policy';
 import KonectarTermsOfUse from './pages/konectar-terms-of-use';
 import OfferSection from './homeComponents/OfferSection';
 import GroupedCheckboxSelect from './pages/checking';
+import RoleSelection from './farmspageComponents/signUp/RoleSelection';
+import PhoneNumberInput from './farmspageComponents/signUp/PhoneNumberInput';
+import CodeVerification from './farmspageComponents/signUp/CodeVerification';
+import SuccessPage from './farmspageComponents/signUp/SuccessMessage';
+
 
 
 const Rendernav = () => {
@@ -32,6 +37,10 @@ const Rendernav = () => {
             <Route path='/konectar-terms-of-use' element={<KonectarTermsOfUse />} />
             <Route path='/OfferSection' element={<OfferSection />} />
             <Route path='/checking' element={<GroupedCheckboxSelect/>} />
+            <Route path='/signup' element={<RoleSelection />} />
+            <Route path='/phone-number' element={<PhoneNumberInput />} />
+            <Route path='/verification' element={<CodeVerification />} />
+            <Route path='/success' element={<SuccessPage />} />
             
             
         
