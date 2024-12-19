@@ -37,7 +37,7 @@ const Rendernav = () => {
             <Route path='/konectar-privacy-policy' element={<KonectarPrivacyPolicy />} />
             <Route path='/konectar-terms-of-use' element={<KonectarTermsOfUse />} />
             <Route path='/OfferSection' element={<OfferSection />} />
-            <Route path='/checking' element={<GroupedCheckboxSelect/>
+            <Route path='/checking' element={<GroupedCheckboxSelect/>} />
             <Route path='/signup' element={<RoleSelection />} />
             <Route path='/phone-number' element={<PhoneNumberInput />} />
             <Route path='/verification' element={<CodeVerification />} />
