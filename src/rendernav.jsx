@@ -13,7 +13,12 @@ import KonectarPrivacyPolicy from './pages/konectar-privacy-policy';
 import KonectarTermsOfUse from './pages/konectar-terms-of-use';
 import OfferSection from './homeComponents/OfferSection';
 import GroupedCheckboxSelect from './pages/checking';
+import RoleSelection from './farmspageComponents/signUp/RoleSelection';
+import PhoneNumberInput from './farmspageComponents/signUp/PhoneNumberInput';
+import CodeVerification from './farmspageComponents/signUp/CodeVerification';
+import SuccessPage from './farmspageComponents/signUp/SuccessMessage';
 import FarmersProfile from './farmspageComponents/profilesetup/FarmersProfile'
+
 
 
 const Rendernav = () => {
@@ -32,8 +37,13 @@ const Rendernav = () => {
             <Route path='/konectar-privacy-policy' element={<KonectarPrivacyPolicy />} />
             <Route path='/konectar-terms-of-use' element={<KonectarTermsOfUse />} />
             <Route path='/OfferSection' element={<OfferSection />} />
-            <Route path='/checking' element={<GroupedCheckboxSelect/>} />
+            <Route path='/checking' element={<GroupedCheckboxSelect/>
+            <Route path='/signup' element={<RoleSelection />} />
+            <Route path='/phone-number' element={<PhoneNumberInput />} />
+            <Route path='/verification' element={<CodeVerification />} />
+            <Route path='/success' element={<SuccessPage />} />
             <Route path='/farmers-profile' element={<FarmersProfile/>} />
+
             
             
         
