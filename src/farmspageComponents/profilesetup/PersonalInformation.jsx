@@ -39,7 +39,7 @@ function PersonalInformation({
 
         {/* Form */}
         <form className="w-full" onSubmit={handleSubmit}>
-          <div className="flex gap-3 mb-7">
+          <div className="flex gap-3 mb-7" >
             <input
               type="file"
               name="photo"
@@ -123,7 +123,7 @@ function PersonalInformation({
           <span className="flex justify-end my-10">
             <Button
               className="text-basewhite py-2 px-10 font-light bg-primary text-sm"
-              onClick={onNext}
+              onClick={onNext} type="button"
             >
               Save & Continue
             </Button>

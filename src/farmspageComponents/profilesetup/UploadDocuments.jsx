@@ -1,21 +1,54 @@
 import { FaRegFileAlt } from "../../icon";
 import IdVerification from "./Verification";
 import Button from "./Button";
-// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-// import { useState } from "react";
+import { useState } from "react";
 
 function UploadDocuments({
   onPrevious,
   onNext,
-  CAC,
-  setCAC,
-  farmOwnership,
-  nationalID,
-  setNationalID,
-  setFarmOwnership,
+  // CAC,
+  // setCAC,
+  // farmOwnership,
+  // setFarmOwnership,
+  // nationalID,
+  // setNationalID,
+  setUploadedFiles,
   setCapturedImage,
 }) {
+
+  const[certificate, setCertificate] = useState(null)
+  const[farmOwnership, setFarmOwnership] = useState(null)
+  const[nationalID, setNationalID] = useState(null)
+
+  // const handleFileChange = (e, setFile) => {
+  //   const file = e.target.files[0];
+  //   if (file) {
+  //     setFile(file);
+  //     setUploadedFiles((prev) => ({
+  //       ...prev,
+  //       [e.target.name]: URL.createObjectURL(file), // Save file as URL
+  //     }));
+  //   }
+  // };
+
+  const handleFileChange = (e, setFile) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setFile(reader.result);
+        setUploadedFiles((prev) => ({
+          ...prev,
+          [e.target.name]: reader.result, 
+        }));
+      };
+      reader.readAsDataURL(file); // Read file as a Data URL
+    }
+  };
+
+
+
   function handleSubmit(e) {
     e.preventDefault();
   }
@@ -29,6 +62,7 @@ function UploadDocuments({
 
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 gap-y-1 md:grid-cols-2">
+
             {/* CAC */}
             <div className="">
               <label htmlFor="" className="font-medium leading-[4rem]">
@@ -36,17 +70,27 @@ function UploadDocuments({
               </label>
               <input
                 type="file"
-                name="cac"
-                id="cac"
-                className="cursor-pointer hidden "
+                name="certificate"
+                id="certificate"
+                className=" hidden "
                 required
-                value={CAC}
-                onChange={(e) => setCAC(e.target.value)}
+                // value={CAC}
+                onChange={(e)=>handleFileChange(e, setCertificate )}
               />
+
+              
               <label
-                htmlFor="cac"
-                className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 "
+                htmlFor="certificate"
+                className="w-[22rem] h-[12rem] "
               >
+                {certificate ? (
+                  <img
+                  src={certificate}
+                  alt="certificate"
+                  className="object-cover w-[23rem] h-[12rem] rounded-2xl mb-4"
+                />
+                ) : (
+                  <span className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 ">
                 <FaRegFileAlt size={35} className="" />
                 <span className="text-xs">
                   Drag and drop file here or
@@ -54,12 +98,17 @@ function UploadDocuments({
                     choose file
                   </span>
                 </span>
+                </span>
+                )
+
+                }
               </label>
               <span className="flex justify-between w-[23rem] text-[0.6rem]">
                 <span className="">Supported formats:PDF,DOC</span>
                 <span className="">Maximum size: 25MB</span>
               </span>
             </div>
+
             {/* OWNERSHIP */}
             <div className="">
               <label htmlFor="" className="font-medium leading-[4rem]">
@@ -67,17 +116,25 @@ function UploadDocuments({
               </label>
               <input
                 type="file"
-                name="ownership"
-                id="ownership"
-                className="cursor-pointer hidden "
+                name="document"
+                id="document"
+                className="hidden "
                 required
-                value={farmOwnership}
-                onChange={(e) => setFarmOwnership(e.target.value)}
+                // value={farmOwnership}
+                onChange={(e)=>handleFileChange(e, setFarmOwnership)}
               />
               <label
-                htmlFor="ownership"
-                className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 "
+                htmlFor="document"
+                className=""
               >
+                {farmOwnership ? (
+                  <img
+                  src={farmOwnership}
+                  alt="document"
+                  className="object-cover w-[23rem] h-[12rem] rounded-2xl mb-4"
+                />
+                ) : (
+                  <span className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 ">
                 <FaRegFileAlt size={35} className="" />
                 <span className="text-xs">
                   Drag and drop file here or
@@ -85,6 +142,10 @@ function UploadDocuments({
                     choose file
                   </span>
                 </span>
+                </span>
+                )
+
+                }
               </label>
               <span className="flex justify-between w-[23rem] text-[0.6rem]">
                 <span className="">Supported formats:PDF,DOC</span>
@@ -101,15 +162,22 @@ function UploadDocuments({
                 type="file"
                 name="id"
                 id="id"
-                className="cursor-pointer hidden "
+                className="hidden "
                 required
-                value={nationalID}
-                onChange={(e) => setNationalID(e.target.value)}
+                onChange={(e)=>handleFileChange(e, setNationalID)}
               />
               <label
                 htmlFor="id"
-                className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 "
+                className=""
               >
+                {nationalID ? (
+                  <img
+                  src={nationalID}
+                  alt="certificate"
+                  className="object-cover w-[23rem] h-[12rem] rounded-2xl mb-4"
+                />
+                ) : (
+                  <span className="cursor-pointer ml-3 outline-dashed outline-offset-8 outline-2 outline-neutral40 flex flex-col w-[22rem] gap-1 h-[12rem] items-center justify-center bg-bdlight rounded-xl mb-5 ">
                 <FaRegFileAlt size={35} className="" />
                 <span className="text-xs">
                   Drag and drop file here or
@@ -117,6 +185,10 @@ function UploadDocuments({
                     choose file
                   </span>
                 </span>
+                </span>
+                )
+
+                }
               </label>
               <span className="flex justify-between w-[23rem] text-[0.6rem]">
                 <span className="">Supported formats:PDF,DOC</span>
@@ -166,6 +238,7 @@ UploadDocuments.propTypes = {
   setCapturedImage: PropTypes.object,
   onPrevious: PropTypes.func,
   onNext: PropTypes.func,
+  setUploadedFiles: PropTypes.func,
 };
 
 export default UploadDocuments;

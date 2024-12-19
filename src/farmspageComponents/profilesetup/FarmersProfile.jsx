@@ -29,22 +29,15 @@ function FarmersProfile() {
   const [aboutUs, setAboutUs] = useState("");
 
   // Upload Documents
-  const [CAC, setCAC] = useState("");
-  const [farmOwnership, setFarmOwnership] = useState("");
-  const [nationalID, setNationalID] = useState("");
+  // const [CAC, setCAC] = useState("");
+  // const [farmOwnership, setFarmOwnership] = useState("");
+  // const [nationalID, setNationalID] = useState("");
+  const [uploadedFiles, setUploadedFiles] = useState({
+    certificate: null,
+    document: null,
+    id: null,
+  });
   const [capturedImage, setCapturedImage] = useState(null);
-
-  // Handle file selection
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = () => {
-        setSelectedImage(reader.result); // Use the file's base64 string
-      };
-      reader.readAsDataURL(file); // Read file as a Data URL
-    }
-  };
   
 
   // State to manage current step
@@ -82,9 +75,10 @@ function FarmersProfile() {
       altEmail: altEmail,
       products: products,
       aboutUs: aboutUs,
-      CAC: CAC,
-      nationalID: nationalID,
-      farmOwnership: farmOwnership,
+      // CAC: CAC,
+      // nationalID: nationalID,
+      // farmOwnership: farmOwnership,
+      uploadedFiles:uploadedFiles,
       capturedImage: capturedImage,
     },
   ];
@@ -214,20 +208,21 @@ function FarmersProfile() {
             <UploadDocuments
               onPrevious={handlePrevious}
               onNext={() => setCurrentStep(4)}
-              CAC={CAC}
-              setCAC={setCAC}
-              farmOwnership={farmOwnership}
-              nationalID={nationalID}
-              setNationalID={setNationalID}
-              setFarmOwnership={setFarmOwnership}
+              // CAC={CAC}
+              // setCAC={setCAC}
+              // farmOwnership={farmOwnership}
+              // nationalID={nationalID}
+              // setNationalID={setNationalID}
+              // setFarmOwnership={setFarmOwnership}
+              setUploadedFiles={setUploadedFiles}
               setCapturedImage={setCapturedImage}
             />
           )}
 
-          {currentStep === 4 && <Success onPreviewProfile={handleToPreview} onPrevious={handlePrevious} />}
+          {currentStep === 4 && <Success onPreviewProfile={handleToPreview} onPrevious={handlePrevious} uploadedFiles={uploadedFiles} />}
 
           {currentStep === 5 && (
-            <ProfilePreview requiredProps={requiredProps} onPrevious={handlePrevious}/>
+            <ProfilePreview requiredProps={requiredProps} onPrevious={handlePrevious} uploadedFiles={uploadedFiles}/>
           )}
         </div>
       </div>

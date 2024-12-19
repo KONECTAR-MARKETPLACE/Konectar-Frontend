@@ -103,11 +103,10 @@ export default function FarmInformation({
                 type="text"
                 id="farmName"
                 className="w-full border rounded-md border-black p-2 placeholder-bddark text-black font-medium text-sm outline-none "
-                required
                 placeholder="Farm Name"
                 value={farmName}
                 onChange={(e) => setFarmName(e.target.value)}
-              />
+                required/>
             </div>
             <div>
               <label htmlFor="location" className="block font-medium leading-8">

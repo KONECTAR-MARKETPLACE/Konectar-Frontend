@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import image1 from "../../assets/images/image1.jpeg";
 import image2 from "../../assets/images/image2.jpeg";
 import image3 from "../../assets/images/image3.jpeg";
-import konectarLogo from "../../assets/images/kon.png";
+// import konectarLogo from "../../assets/images/kon.png";
 import fram1 from "../../assets/images/fram1.png";
 import fram2 from "../../assets/images/fram2.png";
 import fram3 from "../../assets/images/fram3.png";
+
 
 const RoleSelection = () => {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ const RoleSelection = () => {
       </div> */}
 
       {/* Left Section */}
-      <div className="w-full  md:w-1/2 flex flex-col justify-center items-start px-6 md:px-16">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-start px-6 md:px-16">
         <h1 className="text-2xl md:text-3xl font-bold text-green-950 mb-4">
           Get Started with Konectar
         </h1>
@@ -96,7 +97,7 @@ const RoleSelection = () => {
               : "bg-gray-300 text-gray-500 cursor-not-allowed"
           }`}
           onClick={() => selectedRole && navigate("/phone-number")}
-          disabled={!selectedRole}
+          // disabled={!selectedRole}
         >
           Continue
         </button>

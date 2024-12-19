@@ -1,9 +1,9 @@
-import React from 'react'
-import konectarLogo from '../../assets/images/kon.png'
+// import konectarLogo from '../../assets/images/kon.png'
 import image1 from "../../assets/images/image1.jpeg";
 import image2 from "../../assets/images/image2.jpeg";
 import image3 from "../../assets/images/image3.jpeg";
-import { Navigate, useNavigate } from 'react-router-dom';
+// import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function PhoneNumberInput() {
   const navigate = useNavigate();

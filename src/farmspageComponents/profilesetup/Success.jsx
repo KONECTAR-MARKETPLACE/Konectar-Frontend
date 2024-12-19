@@ -1,4 +1,4 @@
-import SuccessImage from "../../assets/images/Success.png";
+import SuccessImage from "../../assets/images/profileSuccessImage.png";
 import { MdKeyboardBackspace } from "../../icon";
 import PropTypes from "prop-types";
 // import { Link } from "react-router-dom";

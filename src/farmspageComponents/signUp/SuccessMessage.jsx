@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import image1 from '../../assets/images/image1.jpeg'
 import image2 from '../../assets/images/image2.jpeg'
 import image3 from '../../assets/images/image3.jpeg'
-import konectarLogo from '../../assets/images/kon.png'
-import success from '../../assets/images/success.png'
+// import konectarLogo from '../../assets/images/kon.png'
+import success from '../../assets/images/farmersSignUpSuccess.png'
 
 const SuccessPage = () => {
   return (

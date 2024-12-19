@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import konectarLogo from "../../assets/images/kon.png";
+import { useState } from "react";
+// import konectarLogo from "../../assets/images/kon.png";
 import image1 from "../../assets/images/image1.jpeg";
 import image2 from "../../assets/images/image2.jpeg";
 import image3 from "../../assets/images/image3.jpeg";
@@ -66,7 +66,7 @@ export default function CodeVerification() {
                     </button>
                 </form>
                 <p className="mt-4 text-sm ">
-                    Didn't receive any code?{" "}
+                    Didn&apos;t receive any code?
                     <a href="#" className="text-green-500 underline">
                         Send code again
                     </a>
