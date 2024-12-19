@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BHeroSection = () => {
     return (
         <>
@@ -8,7 +6,7 @@ const BHeroSection = () => {
             <div className='md:w-[45%] md:ml-24'>
                       <h1 className='font-Manrope font-semibold text-left text-[2rem] md:text-[2.8rem]'>Source For Your Fresh Produce In One Prompt</h1>
                       <p className='text-[0.8rem] md:text-[1rem] mt-8'>Efficiently source the best produce, reduce operational costs, and simplify procurement 
-                        with Konectar's streamlined platform for business.
+                        with Konectar&#39;s streamlined platform for business.
                       </p>
             
             <div className='mt-8 font-Manrope'>

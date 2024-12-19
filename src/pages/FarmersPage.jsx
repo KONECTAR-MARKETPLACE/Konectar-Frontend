@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import FarmersFAQSection from '../farmspageComponents/LandingPage/FarmersFAQSection';
 import FarmersWhatWeOffer from '../farmspageComponents/LandingPage/FarmersWhatWeOffer';
 import FarmersHowItWorks from '../farmspageComponents/LandingPage/FarmersHowItWorks';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const KonectarTermsOfUse = () => {
@@ -16,11 +15,11 @@ const KonectarTermsOfUse = () => {
 
                 <div className='mt-7'>
                     <h1 className='font-bold ml-6 md:ml-12 text-[1.1rem]'>2. Definitions</h1>
-                    <li className='mt-5 ml-6 md:ml-12'>“Platform" refers to the Konectar website, mobile application, and any related services. </li>
-                    <li className='mt-5 ml-6 md:ml-12'>“User" refers to any individual or entity who accesses or uses the platform. </li>
-                    <li className='mt-5 ml-6 md:ml-12'>“Farmers" refer to individuals or entities that supply fruits and vegetables on the platform. </li>
-                    <li className='mt-5 ml-6 md:ml-12'>"Buyers" refer to individuals or entities that purchase fruits and vegetables on the platform. </li>
-                    <li className='mt-5 ml-6 md:ml-12'>"We," "us," "our" refer to Konectar and its affiliates. </li>
+                    <li className='mt-5 ml-6 md:ml-12'>“Platform&#34; refers to the Konectar website, mobile application, and any related services. </li>
+                    <li className='mt-5 ml-6 md:ml-12'>“User&#34; refers to any individual or entity who accesses or uses the platform. </li>
+                    <li className='mt-5 ml-6 md:ml-12'>“Farmers&#34; refer to individuals or entities that supply fruits and vegetables on the platform. </li>
+                    <li className='mt-5 ml-6 md:ml-12'>&#34;Buyers&#34; refer to individuals or entities that purchase fruits and vegetables on the platform. </li>
+                    <li className='mt-5 ml-6 md:ml-12'>&#34;We,&#34; &#34;us,&#34; &#34;our&#34; refer to Konectar and its affiliates. </li>
                     
 
                  
