@@ -7,7 +7,6 @@ import {
   FaXTwitter,
 } from "../../icon";
 import Button from "./Button";
-// import Knife from "./images/8.png";
 import CustomersReview from "./CustomersReview";
 import { MdKeyboardBackspace } from "../../icon";
 import PropTypes from "prop-types";

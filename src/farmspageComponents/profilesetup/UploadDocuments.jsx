@@ -7,12 +7,6 @@ import { useState } from "react";
 function UploadDocuments({
   onPrevious,
   onNext,
-  // CAC,
-  // setCAC,
-  // farmOwnership,
-  // setFarmOwnership,
-  // nationalID,
-  // setNationalID,
   setUploadedFiles,
   setCapturedImage,
 }) {
@@ -21,16 +15,6 @@ function UploadDocuments({
   const[farmOwnership, setFarmOwnership] = useState(null)
   const[nationalID, setNationalID] = useState(null)
 
-  // const handleFileChange = (e, setFile) => {
-  //   const file = e.target.files[0];
-  //   if (file) {
-  //     setFile(file);
-  //     setUploadedFiles((prev) => ({
-  //       ...prev,
-  //       [e.target.name]: URL.createObjectURL(file), // Save file as URL
-  //     }));
-  //   }
-  // };
 
   const handleFileChange = (e, setFile) => {
     const file = e.target.files[0];

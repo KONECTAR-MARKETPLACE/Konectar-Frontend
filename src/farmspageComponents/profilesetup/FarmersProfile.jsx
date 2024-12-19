@@ -29,9 +29,6 @@ function FarmersProfile() {
   const [aboutUs, setAboutUs] = useState("");
 
   // Upload Documents
-  // const [CAC, setCAC] = useState("");
-  // const [farmOwnership, setFarmOwnership] = useState("");
-  // const [nationalID, setNationalID] = useState("");
   const [uploadedFiles, setUploadedFiles] = useState({
     certificate: null,
     document: null,
@@ -75,9 +72,6 @@ function FarmersProfile() {
       altEmail: altEmail,
       products: products,
       aboutUs: aboutUs,
-      // CAC: CAC,
-      // nationalID: nationalID,
-      // farmOwnership: farmOwnership,
       uploadedFiles:uploadedFiles,
       capturedImage: capturedImage,
     },
@@ -208,12 +202,6 @@ function FarmersProfile() {
             <UploadDocuments
               onPrevious={handlePrevious}
               onNext={() => setCurrentStep(4)}
-              // CAC={CAC}
-              // setCAC={setCAC}
-              // farmOwnership={farmOwnership}
-              // nationalID={nationalID}
-              // setNationalID={setNationalID}
-              // setFarmOwnership={setFarmOwnership}
               setUploadedFiles={setUploadedFiles}
               setCapturedImage={setCapturedImage}
             />
@@ -233,49 +221,3 @@ function FarmersProfile() {
 
 
 export default FarmersProfile;
-
-// const tabs = [
-//   {
-//     id: 1,
-//     title: "Personal Information",
-//   },
-//   {
-//     id: 2,
-//     title: "Farm Information",
-//   },
-//   {
-//     id: 3,
-//     title: "Upload Documents & Verification",
-//   },
-// ];
-
-// const tabs = [
-//   {
-//     id: 1,
-//     title: "Personal Information",
-//     content: <PersonalInformation/>,
-//   },
-//   {
-//     id: 2,
-//     title: "Farm Information",
-//     content: <FarmInformation/>,
-//   },
-//   {
-//     id: 3,
-//     title: "Upload Documents & Verification",
-//     content: <UploadDocuments/>,
-//   },
-// ];
-
-{
-  /* {tabs.map((tab) => (
-            <div key={tab.id} className={`flex items-center justify-between gap-3 ${step >= 1 ? "text-primary" : ""}`} >
-              <span className="flex gap-2 items-center">
-                <p className="text-neutral10 bg-primary rounded-[50%] w-6 h-6 text-[0.85rem] flex justify-center items-center ">{tab.id}</p>
-                
-              <p className="text-primary text-base font-medium">{tab.title}</p>
-              <span className="font-bold text-primary text-2xl">&gt;</span>
-              </span>
-            </div>
-          ))} */
-}
