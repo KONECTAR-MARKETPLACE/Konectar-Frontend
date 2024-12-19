@@ -11,6 +11,7 @@ function FarmersProfile() {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Farm Information
   const [farmLogo, setFarmLogo] = useState("");
@@ -32,6 +33,19 @@ function FarmersProfile() {
   const [farmOwnership, setFarmOwnership] = useState("");
   const [nationalID, setNationalID] = useState("");
   const [capturedImage, setCapturedImage] = useState(null);
+
+  // Handle file selection
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setSelectedImage(reader.result); // Use the file's base64 string
+      };
+      reader.readAsDataURL(file); // Read file as a Data URL
+    }
+  };
+  
 
   // State to manage current step
   const [currentStep, setCurrentStep] = useState(1);
@@ -158,6 +172,8 @@ function FarmersProfile() {
               setLName={setLName}
               phoneNumber={phoneNumber}
               setPhoneNumber={setPhoneNumber}
+              selectedImage={selectedImage} 
+              setSelectedImage={setSelectedImage}
             />
           )}
 

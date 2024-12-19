@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 export default function FarmInformation({
   onNext,
   onPrevious,
-  // farmLogo,
+  farmLogo,
   setFarmLogo,
   farmName,
   setFarmName,
@@ -33,6 +33,19 @@ export default function FarmInformation({
   aboutUs,
   setAboutUs,
 }) {
+
+  // Handle file selection
+  const handleFarmLogo = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setFarmLogo(reader.result); // Use the file's base64 string
+      };
+      reader.readAsDataURL(file); // Read file as a Data URL
+    }
+  };
+
   function handleSubmit(e) {
     e.preventDefault();
   }
@@ -46,19 +59,31 @@ export default function FarmInformation({
 
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="flex gap-3 mb-7">
-            <input
+          <input
               type="file"
-              name="photo"
-              id="photo"
-              className="cursor-pointer hidden "
+              name="logo"
+              id="logo"
+              alt="Farm Logo"
+              accept="image/*"
+              className="hidden"
+              onChange={handleFarmLogo}
               required
-              onChange={(e) => setFarmLogo(e.target.files[0])}
             />
             <label
-              htmlFor="photo"
-              className="h-[5.5rem] cursor-pointer flex items-center justify-center bg-neutral40 w-[5.5rem] rounded-[50%] "
+              htmlFor="logo"
+              className="h-[5.5rem] w-[5.5rem] rounded-[50%] "
             >
-              <BiImageAdd className="text-2xl " />
+              {farmLogo ? (
+                <img
+                  src={farmLogo}
+                  alt="Farm Logo"
+                  className="object-cover w-full h-full rounded-[50%]"
+                />
+              ) : (
+                <span className="cursor-pointer flex w-full h-full items-center rounded-[50%] justify-center bg-neutral40">
+                  <BiImageAdd className="text-2xl " />
+                </span>
+              )}
             </label>
             <span className="mt-11">
               <p className="text-[0.9rem] leading-6">Upload your farm logo</p>

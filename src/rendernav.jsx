@@ -14,7 +14,6 @@ import KonectarTermsOfUse from './pages/konectar-terms-of-use';
 import OfferSection from './homeComponents/OfferSection';
 import GroupedCheckboxSelect from './pages/checking';
 import FarmersProfile from './farmspageComponents/profilesetup/FarmersProfile'
-import Success from './farmspageComponents/profilesetup/Success';
 
 
 const Rendernav = () => {
@@ -35,7 +34,6 @@ const Rendernav = () => {
             <Route path='/OfferSection' element={<OfferSection />} />
             <Route path='/checking' element={<GroupedCheckboxSelect/>} />
             <Route path='/farmers-profile' element={<FarmersProfile/>} />
-            <Route path='/success' element={<Success/>} />
             
             
         
