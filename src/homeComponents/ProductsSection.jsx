@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaMobileAlt } from "react-icons/fa";
 import { BsShop } from "react-icons/bs";
 import { RiSecurePaymentFill } from "react-icons/ri";

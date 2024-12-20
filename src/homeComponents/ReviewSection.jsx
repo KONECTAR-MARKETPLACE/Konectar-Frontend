@@ -25,7 +25,7 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={RobertSmith} alt="Second customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;As a small-scale farmer, it was always hard to find reliable buyers. But with Konectar, I’ve been able to access wholesale buyers who value my fresh produce. The best part? I no longer worry about the quality checks or payment delays – Konectar takes care of that!"
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;As a small-scale farmer, it was always hard to find reliable buyers. But with Konectar, I&apos;ve been able to access wholesale buyers who value my fresh produce. The best part? I no longer worry about the quality checks or payment delays – Konectar takes care of that!&quot;
 </p>
                             <p className='mt-3'>Grace Ogunseyin,</p>
                             <p className='text-[0.6rem]'>Vegetable Farmer, Ekiti State.</p>
@@ -43,7 +43,7 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={BosunThomas} alt="First customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"Konectar has completely changed the way I do business. I don’t have to wait for market days or struggle with low prices anymore. I just post my produce, and buyers come directly to me. It’s made farming so much easier, and I can now plan my harvests knowing I have a ready market."</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;Konectar has completely changed the way I do business. I don&apos;t have to wait for market days or struggle with low prices anymore. I just post my produce, and buyers come directly to me. It&apos;s made farming so much easier, and I can now plan my harvests knowing I have a ready market.&quot;</p>
                             <p className='mt-3'>Aliyu Muritador, </p>
                             <p className='text-[0.6rem]'>Tomato Farmer, Plateau State.</p>
                             </div>
@@ -53,7 +53,7 @@ const ReviewSection = () => {
 
                     <div className='flex rounded-md py-0 md:py-8 basis-[50%] max-h-fit md:max-h-full'>
                         <div className='basis-[50%]'><img className='w-full h-full' src={ReginaTina} alt="Second customer" /></div>
-                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>"I was skeptical at first, but Konectar has proven to be a game-changer. The platform helped me find buyers faster, and I get paid securely through their escrow system. Now, I have more time to focus on growing high-quality tomatoes instead of worrying about finding buyers."</p>
+                        <div className='bg-[#003311] basis-[50%] rounded-r-md p-3 text-[0.7rem] md:text-[0.8rem]'><p>&quot;I was skeptical at first, but Konectar has proven to be a game-changer. The platform helped me find buyers faster, and I get paid securely through their escrow system. Now, I have more time to focus on growing high-quality tomatoes instead of worrying about finding buyers.&quot;</p>
                             <p className='mt-3'>Fatima Abdulrafiu,</p>
                             <p className='text-[0.6rem]'>Tomato Farmer, Kaduna State.</p>
                             </div>

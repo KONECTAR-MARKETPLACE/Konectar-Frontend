@@ -1,4 +1,3 @@
-import React from 'react';
 import phone1 from '../assets/images/ip1.png'
 import phone2 from '../assets/images/iphone1-2.png'
 import phone3 from '../assets/images/ip6.png'
@@ -47,7 +46,7 @@ const TruckersHowItWorks = () => {
              <h1 className='text-[0.9rem] md:text-[1.4rem] font-bold mt-3'>Access Logistics Dashboard & Manage Orders</h1>
                 
                     <p className='text-[0.8rem] md:text-[1.4rem] mt-3 md:mt-5'>Once registered, log in to your personalized Logistics Dashboard to view available orders. See 
-                        order details, routes, and delivery timelines, then accept orders that match your vehicle's capacity 
+                        order details, routes, and delivery timelines, then accept orders that match your vehicle&apos;s capacity 
                         and schedule. 
                     </p>
 

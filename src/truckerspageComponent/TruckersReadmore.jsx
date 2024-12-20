@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { truckdata } from '../homeComponents/data';
+import PropTypes from "prop-types";
 
 const TruckersReadMore = ({ trucktrial }) => {
 
@@ -30,6 +31,10 @@ const TruckersReadMore = ({ trucktrial }) => {
         </div>
     );
 };
+
+TruckersReadMore.propTypes = {
+    trucktrial: PropTypes.object,
+}
 
 
 const TruckersContent = () => {

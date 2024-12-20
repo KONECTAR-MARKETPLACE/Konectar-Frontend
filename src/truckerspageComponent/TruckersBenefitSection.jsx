@@ -1,4 +1,3 @@
-import React from 'react';
 import pic1 from '../assets/images/ben1.png';
 import pic2 from '../assets/images/ben2.png';
 import pic3 from '../assets/images/ben3.png';
@@ -41,7 +40,7 @@ const TruckersBenefitSection = () => {
 
                         <p className='font-bold text-[1rem] md:text-[1.4rem]'>Optimized Route Planning</p>
 
-                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>With Konectar's platform, logistics providers can plan and optimize their delivery routes 
+                        <p className='mt-4 md:mt-8 text-[0.8rem] md:text-[1.3rem]'>With Konectar&apos;s platform, logistics providers can plan and optimize their delivery routes 
                             based on real-time orders from farmers and buyers. This helps reduce operational costs, improve 
                             delivery times, and maximize vehicle utilization.
 

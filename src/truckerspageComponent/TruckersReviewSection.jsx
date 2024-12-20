@@ -1,4 +1,3 @@
-import React from 'react';
 import Tcust1 from '../assets/images/Linda Gift/Tcust1.png';
 import Tcust2 from '../assets/images/Linda Gift/Tcust2.png';
 import { ImQuotesLeft } from "react-icons/im";
@@ -17,7 +16,7 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Partnering with Konectar has transformed our business. The direct access to farmers and buyers has significantly increased our order volume, and the platform's ease of use makes our logistics management a breeze!"
+                        <p className='mt-5'>&quot;Partnering with Konectar has transformed our business. The direct access to farmers and buyers has significantly increased our order volume, and the platform&apos;s ease of use makes our logistics management a breeze!&quot;
 </p>
 
                         <div className='flex gap-3 items-center mt-4'>
@@ -34,7 +33,7 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>“The real-time tracking feature is a game changer. It allows us to provide timely updates to our clients, enhancing transparency and trust. Our efficiency has skyrocketed since we joined Konectar!"</p>
+                        <p className='mt-5'>&quot;The real-time tracking feature is a game changer. It allows us to provide timely updates to our clients, enhancing transparency and trust. Our efficiency has skyrocketed since we joined Konectar!&quot;</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
@@ -49,7 +48,7 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Konectar's commitment to quality aligns perfectly with our values. Working together, we ensure that fresh produce arrives in optimal condition, which keeps our clients happy and coming back for more!"</p>
+                        <p className='mt-5'>&quot;Konectar&apos;s commitment to quality aligns perfectly with our values. Working together, we ensure that fresh produce arrives in optimal condition, which keeps our clients happy and coming back for more!&quot;</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
@@ -72,7 +71,7 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>"Since joining Konectar, we have expanded our client base beyond what we thought was possible. The networking opportunities and collaborative spirit among partners are truly inspiring!"</p>
+                        <p className='mt-5'>&quot;Since joining Konectar, we have expanded our client base beyond what we thought was possible. The networking opportunities and collaborative spirit among partners are truly inspiring!&quot;</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 
@@ -87,7 +86,7 @@ const TruckersReviewSection = () => {
 
                         <div className=''><ImQuotesLeft size={30} /></div>
 
-                        <p className='mt-5'>“What I love most about Konectar is the community. Being part of a network that prioritizes efficiency and quality in agriculture logistics is rewarding, and it has helped us build lasting relationships in the industry."</p>
+                        <p className='mt-5'>&quot;What I love most about Konectar is the community. Being part of a network that prioritizes efficiency and quality in agriculture logistics is rewarding, and it has helped us build lasting relationships in the industry.&quot;</p>
 
                         <div className='flex gap-3 items-center mt-4'>
 

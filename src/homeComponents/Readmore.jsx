@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { data } from './data';
+import PropTypes from "prop-types";
 
 const ReadMore = ({ trial }) => {
 
@@ -36,6 +37,9 @@ const ReadMore = ({ trial }) => {
     );
 };
 
+ReadMore.propTypes = {
+    trial: PropTypes.object
+}
 
 
 const Content = () => {

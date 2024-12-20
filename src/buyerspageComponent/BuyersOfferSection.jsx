@@ -1,4 +1,4 @@
-import React from 'react';
+
 import pic1 from '../assets/images/pic1.png';
 
 const BuyersOfferSection = () => {

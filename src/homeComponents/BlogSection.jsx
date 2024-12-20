@@ -1,9 +1,9 @@
 import { blogs } from "../constants";
-import blogimage1 from '../assets/images/blogImage1.png';
-import blogimage2 from '../assets/images/blogImage2.png';
-import blogimage3 from '../assets/images/blogImage3.png';
-import blogimage4 from '../assets/images/blogImage4.png';
-import blogimage5 from '../assets/images/blogImage5.png';
+// import blogimage1 from '../assets/images/blogImage1.png';
+// import blogimage2 from '../assets/images/blogImage2.png';
+// import blogimage3 from '../assets/images/blogImage3.png';
+// import blogimage4 from '../assets/images/blogImage4.png';
+// import blogimage5 from '../assets/images/blogImage5.png';
 import { ArrowRight } from "lucide-react";
 
 

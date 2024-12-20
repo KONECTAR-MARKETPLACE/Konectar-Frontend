@@ -8,7 +8,7 @@ const MissionSection = () => {
         <h1 className='font-Manrope font-semibold text-[2rem] md:text-[2.8rem] leading-tight md:leading-snug text-[#0d2727]'>Our Mission</h1>
         <p className="mt-4 text-[1rem] md:text-[1.2rem] text-[#003311]">
 
-          "At Konectar, our mission is to increase the Profitability of Fruits and Vegetables Farmers by providing direct market access, ensuring fair trade, increasing smallholder farmers' resilience.”
+        &quot;At Konectar, our mission is to increase the Profitability of Fruits and Vegetables Farmers by providing direct market access, ensuring fair trade, increasing smallholder farmers&apos; resilience.&quot;
 
         </p>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import pic1 from '../assets/images/Image22.png';
 
 const OurVisionSection = () => {

@@ -1,5 +1,5 @@
-import React from 'react';
-import KonectarTruck from '../assets/images//Linda Gift/KonectarTruck.png';
+import KonectarTruck from '../assets/images/Linda Gift/KonectarTruck.png';
+// ../assets/images//Linda Gift/KonectarTruck.png
 
 const THeroSection = () => {
     return (

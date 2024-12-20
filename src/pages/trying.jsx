@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useMemo } from 'react';
+import  { useState } from 'react';
+// import { useMemo } from 'react';
 
 import Select from 'react-select'
 
@@ -136,7 +136,7 @@ const Trying = () => {
         })}
         required />
 
-      <p className='text-[0.7rem]'>Indicate in the input field above if you don't see your category here</p><br />
+      <p className='text-[0.7rem]'>Indicate in the input field above if you don&apos;t see your category here</p><br />
 
       <label className='font-bold' htmlFor='produce2'>
         Supply Frequency  </label><br></br>

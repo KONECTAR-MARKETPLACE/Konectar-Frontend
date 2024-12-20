@@ -213,12 +213,6 @@ function UploadDocuments({
 }
 
 UploadDocuments.propTypes = {
-  CAC: PropTypes.object, // `node` allows any renderable content
-  setCAC: PropTypes.object,
-  farmOwnership: PropTypes.object,
-  nationalID: PropTypes.object,
-  setNationalID: PropTypes.object,
-  setFarmOwnership: PropTypes.object,
   setCapturedImage: PropTypes.object,
   onPrevious: PropTypes.func,
   onNext: PropTypes.func,

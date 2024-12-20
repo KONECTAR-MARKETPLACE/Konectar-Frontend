@@ -1,4 +1,3 @@
-import React from 'react';
 import Benefit1 from '../assets/images/Linda Gift/Benefit1.png';
 import Benefit2 from '../assets/images/Linda Gift/Benefit2.png';
 

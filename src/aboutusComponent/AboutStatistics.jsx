@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AboutStatistics = () => {
     return (
         <>
@@ -66,7 +64,7 @@ const AboutStatistics = () => {
 
                     <div className='border-r-4 md:border-r-0 border-[#003333] basis-[20%]'>
                         <h1 className='text-[#009933] font-extrabold text-[2rem] md:text-[3rem]'>50%</h1>
-                        <p className='text-[#003333] font-semibold'>Expected increase in farmers' income by eliminating middlemen</p>
+                        <p className='text-[#003333] font-semibold'>Expected increase in farmers&lsquo; income by eliminating middlemen</p>
                     </div>
 
 

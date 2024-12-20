@@ -1,8 +1,8 @@
-import React from "react";
 import { default as ReactSelect } from "react-select";
 import { components } from "react-select";
 import { useState } from "react";
 import { options2, options3, options4, options5, groupedOptions } from "./formdata2";
+import PropTypes from "prop-types";
 
 
 
@@ -21,6 +21,10 @@ const Option = (props) => {
     );
 };
 
+Option.propTypes = {
+    isSelected: PropTypes.bool,
+    label: PropTypes.string,
+}
 
 
 
@@ -85,7 +89,7 @@ export default function Example({ handleChange, handleOptionText }) {
                 })}
                 required />
 
-            <p className='text-[0.7rem]'>Indicate in the input field above if you don't see your category here</p><br />
+            <p className='text-[0.7rem]'>Indicate in the input field above if you don&apos;t see your category here</p><br />
 
             <label className='font-bold' htmlFor='produce2'>
                 Supply Frequency  </label><br></br>
@@ -119,7 +123,7 @@ export default function Example({ handleChange, handleOptionText }) {
 
             {selectedOptions.supplyfrequency?.value === 'others' && (
                 <div>
-                    <p className='text-[0.7rem]'>Indicate here if you don't see your category above</p>
+                    <p className='text-[0.7rem]'>Indicate here if you don&apos;t see your category above</p>
                     <label className='font-bold' htmlFor="other">Please specify:</label>
                     <input className='bg-[#dcd6ec99] mt-3 mb-6 border-b-[#a7abad] hover:border-t-[#a7abad] hover:border-b-black focus:outline-none focus:border-t-white focus:border-b-black focus:bg-white cursor-pointer border-solid border-[1px] rounded-md px-5 py-1 md:py-2 w-full'
                         type="text"
@@ -214,6 +218,11 @@ export default function Example({ handleChange, handleOptionText }) {
                 required /> <br />
         </>
     );
+}
+
+Example.propTypes = {
+    handleChange: PropTypes.func,
+    handleOptionText: PropTypes.func,
 }
 
  // const [selectedOptions2, setSelectedOptions2] = useState([]);

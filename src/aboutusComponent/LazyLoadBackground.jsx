@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import PropTypes from "prop-types";
 
 const LazyLoadBackground = ({ imageUrl, children, className }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,5 +40,12 @@ const LazyLoadBackground = ({ imageUrl, children, className }) => {
     </div>
   );
 };
+
+LazyLoadBackground.propTypes = {
+  imageUrl: PropTypes.object,
+  children: PropTypes.object,
+  className: PropTypes.object
+
+}
 
 export default LazyLoadBackground;

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import phone1 from '../assets/images/ip11.png'
 import phone2 from '../assets/images/ip10.png'
 import phone3 from '../assets/images/ip12.png'

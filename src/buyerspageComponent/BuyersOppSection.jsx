@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FiTruck } from "react-icons/fi";
 import { GiFlowers } from "react-icons/gi";
 import { MdOutlineConnectWithoutContact } from "react-icons/md";

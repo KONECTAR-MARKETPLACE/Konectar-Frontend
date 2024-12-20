@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import BHeroSection from '../buyerspageComponent/BHeroSection';
 import BuyersFAQSection from '../buyerspageComponent/BuyersFAQSection';
 import BuyersHowItWorks from '../buyerspageComponent/BuyersHowItWorks';

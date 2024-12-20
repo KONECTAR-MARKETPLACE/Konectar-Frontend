@@ -1,4 +1,3 @@
-import React from 'react';
 import { CgProfile } from "react-icons/cg";
 import { FaRegHandshake } from "react-icons/fa6";
 import { LuBus } from "react-icons/lu";

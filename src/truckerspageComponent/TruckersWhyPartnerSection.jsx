@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoContractOutline } from "react-icons/io5";
 import { IoRocketOutline } from "react-icons/io5";
 import { HiArrowTrendingUp } from "react-icons/hi2";

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { buydata } from '../homeComponents/data';
+import PropTypes from "prop-types";
 
 const BuyersReadMore = ({ buytrial }) => {
 
@@ -31,6 +32,9 @@ const BuyersReadMore = ({ buytrial }) => {
     );
 };
 
+BuyersReadMore.propTypes = {
+    buytrial: PropTypes.object
+}
 
 const BuyersContent = () => {
     
